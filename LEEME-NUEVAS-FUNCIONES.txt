@@ -1,0 +1,1 @@
+Funciones disponibles: buscador y filtros de productos; productos destacados. Se conservan los fondos, las fotos originales y los carruseles.

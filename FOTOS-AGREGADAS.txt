@@ -1,0 +1,13 @@
+Fotos incorporadas a los carruseles de galeria.html:
+clickers: 11 fotos
+juegos de mesa: 7 fotos
+juguetes: 6 fotos
+juguetes articulados: 8 fotos
+lamparas: 4 fotos
+llaveros: 12 fotos
+macetas: 4 fotos
+soportes: 10 fotos
+soportes para celular: 11 fotos
+vasos: 3 fotos
+
+Las fotos estan en imagenes/catalogo/. Para ver la galeria, abrir galeria.html.

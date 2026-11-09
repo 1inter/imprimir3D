@@ -1,0 +1,14 @@
+
+/* Etiquetas y vistos recientemente */
+.product-mark{position:absolute;top:12px;left:12px;z-index:3;background:#7c3aed;color:#fff;font:700 11px/1.2 system-ui,sans-serif;letter-spacing:.04em;padding:7px 11px;border-radius:999px;box-shadow:0 3px 12px #0008;pointer-events:none}
+.product-mark--popular{background:#e7b957;color:#23142f}
+.card-image,.gallery-card .photo-open{position:relative}
+.recently-viewed{max-width:1180px;margin:40px auto;padding:24px 20px;border:1px solid #8b5cf633;border-radius:20px;background:linear-gradient(140deg,#241631bb,#14101bbb);color:#f7f2ff}
+.recently-viewed h2{margin:0 0 6px;font-size:clamp(21px,3vw,28px)}
+.recently-viewed p{margin:0 0 18px;color:#d3c8e3}
+.recently-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:15px}
+.recent-item{display:flex;flex-direction:column;text-decoration:none!important;color:#fff!important;background:#ffffff0c;border:1px solid #ffffff21;border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
+.recent-item:hover{transform:translateY(-3px);border-color:#ad86ff}
+.recent-item img{width:100%;height:140px;object-fit:cover;background:#1c1427}
+.recent-item span{padding:11px;font-size:13px;font-weight:650}
+@media(max-width:520px){.recently-viewed{margin:24px 12px;padding:18px 14px}.recently-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recent-item img{height:112px}}

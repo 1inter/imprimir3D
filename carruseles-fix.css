@@ -1,0 +1,5 @@
+/* Corrección de carruseles: las diapositivas deben superponerse, no desplazar el contenido. */
+.auto-carousel .carousel-track,.auto-carousel .carousel-slide{position:absolute;inset:0;width:100%;height:100%;}
+.auto-carousel .carousel-slide img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#101323;}
+.auto-carousel .carousel-slide:not(.is-active){visibility:hidden;opacity:0;pointer-events:none;}
+.auto-carousel .carousel-slide.is-active{visibility:visible;opacity:1;}

@@ -1,0 +1,13 @@
+ABRIR: index.html para ver la página principal.
+GALERÍA: galeria.html es una página independiente.
+PARA AGREGAR FOTOS: copiá una tarjeta <article class="gallery-card"> en galeria.html y colocá tu foto en imagenes/.
+IMPORTANTE: Cambiá el número 5491100000000 en app.js y en los enlaces de WhatsApp de index.html.
+Las imágenes existentes son ilustrativas, salvo las que hayas aportado. Reemplazalas por fotos reales de tus trabajos antes de publicar.
+
+CARRUSEL: se muestra en la página principal y en galeria.html. Cambiá las imágenes editando los bloques carousel-slide en esos archivos. Cambia cada 4 segundos, admite flechas y puntos.
+
+
+NUEVAS CATEGORÍAS CON CARRUSEL
+En galeria.html hay carruseles separados para Vasos, Llaveros, Soportes, Juguetes articulados, Macetas, Figuras y Lámparas.
+Para agregar fotos: guardalas en imagenes/, buscá el carrusel de la categoría en galeria.html, y reemplazá un bloque category-placeholder por <img src="imagenes/tu-foto.jpg" alt="Nombre"><div class="carousel-caption">Nombre</div>.
+Para agregar más fotos, duplicá un <div class="carousel-slide">...</div> dentro de su carousel-track. Las flechas y puntos funcionan automáticamente.

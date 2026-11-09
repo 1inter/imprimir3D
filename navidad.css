@@ -1,0 +1,87 @@
+
+.xmas-decorated{position:relative!important;overflow:visible!important}
+.xmas-drop-lights{position:absolute;top:0;left:2%;right:2%;height:45px;display:flex;align-items:flex-start;justify-content:space-around;pointer-events:none;z-index:15;border-top:2px solid #42654c;border-radius:50% 50% 0 0}
+.xmas-drop-bulb{position:relative;display:block;margin-top:var(--drop);height:14px;width:10px;flex-shrink:0;background:var(--bulb);border-radius:45% 45% 55% 55%;box-shadow:0 0 11px 3px var(--bulb);animation:xmas-pulse 1.5s ease-in-out infinite alternate;animation-delay:var(--delay)}
+.xmas-drop-bulb:before{content:"";position:absolute;width:2px;height:var(--drop);bottom:100%;left:4px;background:#51745a}
+.xmas-drop-bulb:after{content:"";position:absolute;top:-4px;left:-1px;width:12px;height:5px;background:#36523e;border-radius:2px}
+@keyframes xmas-pulse{from{opacity:.5;filter:brightness(.8)}to{opacity:1;filter:brightness(1.5)}}
+.xmas-frame-ornament{position:absolute;top:-23px;right:-9px;z-index:18;font-size:31px;transform:rotate(13deg);filter:drop-shadow(0 4px 4px #0008);pointer-events:none}
+.xmas-top-garland{position:relative;height:65px;background:#090715;z-index:30}
+.xmas-top-garland .xmas-drop-lights{top:0;left:0;right:0}
+.xmas-snow{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:50}
+.xmas-flake{position:absolute;top:-30px;color:#fff;opacity:.65;animation:xmas-fall linear infinite}
+@keyframes xmas-fall{to{transform:translate3d(var(--drift),110vh,0)}}
+.christmas-home-feature,.christmas-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px;align-items:center;background:linear-gradient(135deg,#1d102a,#0d0a17);border:1px solid #76569b;border-radius:22px;padding:22px;margin:32px auto;max-width:1150px;color:#fff;text-decoration:none;box-shadow:0 16px 45px #0006}
+.christmas-home-feature img,.christmas-feature img{width:100%;max-height:330px;object-fit:cover;border-radius:15px}
+.christmas-home-feature span,.christmas-feature span{color:#ffda86;font-size:12px;font-weight:800;letter-spacing:2px}
+.christmas-home-feature h2,.christmas-feature h3{font-size:clamp(23px,3vw,36px);line-height:1.2;margin:12px 0}
+.christmas-home-feature p,.christmas-feature p{color:#d7cce4;margin:10px 0 20px}
+.christmas-home-feature a,.christmas-feature strong{display:inline-block;background:#7c3fc3;color:white;padding:12px 18px;border-radius:12px;text-decoration:none}
+.christmas-feature{max-width:none;margin:20px 0 28px}
+@media(max-width:650px){.christmas-home-feature,.christmas-feature{grid-template-columns:1fr;margin:20px 12px;padding:14px}.xmas-drop-bulb:nth-child(even){display:none}.xmas-frame-ornament{font-size:24px;right:0}.xmas-top-garland{height:55px}}
+@media(prefers-reduced-motion:reduce){.xmas-drop-bulb,.xmas-flake{animation:none}.xmas-snow{display:none}}
+
+/* Guirnaldas por encima de los marcos: no cubren títulos ni textos */
+.xmas-decorated:not(.xmas-top-garland){margin-top:48px!important}
+.xmas-decorated:not(.xmas-top-garland) > .xmas-drop-lights{top:-45px!important;height:43px!important}
+.xmas-decorated:not(.xmas-top-garland) > .xmas-frame-ornament{top:-38px!important;right:5px!important}
+.xmas-top-garland > .xmas-drop-lights{top:0!important}
+@media(max-width:650px){.xmas-decorated:not(.xmas-top-garland){margin-top:42px!important}}
+
+/* Nuevos detalles festivos: decorativos y fuera del contenido */
+.xmas-trimmed{position:relative;isolation:isolate}
+.xmas-pine-corner{position:absolute;top:-16px;left:4px;z-index:18;pointer-events:none;display:flex;align-items:center;transform:rotate(-16deg);filter:drop-shadow(0 3px 3px #0009)}
+.xmas-pine-corner .pine-branch{font-size:31px;line-height:1}
+.xmas-pine-corner .pine-berry{font-size:10px;color:#f34655;letter-spacing:1px;margin-left:-8px;margin-top:14px;text-shadow:0 0 4px #d24}
+.xmas-snowcap{position:absolute;left:12%;right:12%;top:-3px;height:8px;z-index:13;pointer-events:none;background:radial-gradient(ellipse at 12% 10%,#fff 0 55%,transparent 58%) 0 0/52px 9px repeat-x;filter:drop-shadow(0 1px 2px #bce5ff77);opacity:.85}
+.xmas-hat{position:absolute;right:28px;top:-31px;z-index:19;transform:rotate(13deg);font-size:28px;pointer-events:none;filter:drop-shadow(0 3px 3px #000a)}
+.xmas-gifts{position:absolute;right:-4px;bottom:-14px;z-index:19;font-size:29px;pointer-events:none;filter:drop-shadow(0 3px 3px #0009)}
+.xmas-baubles{position:absolute;top:0;right:45px;z-index:18;display:flex;gap:14px;pointer-events:none}
+.xmas-bauble{position:relative;margin-top:var(--cord);height:15px;width:15px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#fff9,var(--ornament) 45%,#1b1425 130%);border:1px solid #e5ca7e;box-shadow:0 2px 8px #0007;animation:xmas-swing 4s ease-in-out infinite alternate;transform-origin:50% calc(-1 * var(--cord))}
+.xmas-bauble:before{content:"";position:absolute;left:7px;bottom:100%;height:var(--cord);width:1px;background:#cbb788}
+.xmas-bauble:after{content:"";position:absolute;top:-4px;left:5px;width:5px;height:4px;background:#d5bb79;border-radius:1px}
+@keyframes xmas-swing{to{transform:rotate(7deg)}}
+.xmas-sparkle-title{position:relative}
+.xmas-sparkle-title:after{content:"✦  ✧";display:inline-block;margin-left:12px;color:#ffe6a1;font-size:.55em;vertical-align:top;text-shadow:0 0 8px #ffe59e,0 0 17px #b887ff;animation:xmas-twinkle 2.4s ease-in-out infinite alternate}
+@keyframes xmas-twinkle{from{opacity:.4;transform:scale(.9)}to{opacity:1;transform:scale(1.08)}}
+@media(max-width:650px){.xmas-pine-corner .pine-branch{font-size:22px}.xmas-hat{font-size:23px;right:18px}.xmas-gifts{font-size:23px}.xmas-baubles{right:30px;gap:9px}.xmas-bauble{width:11px;height:11px}.xmas-bauble:before{left:5px}}
+@media(prefers-reduced-motion:reduce){.xmas-bauble,.xmas-sparkle-title:after{animation:none}}
+
+/* Nieve continua y recta en todos los marcos, sin cortes ni patrones repetidos. */
+.xmas-trimmed > .xmas-snowcap {
+  position:absolute !important;
+  top:-4px !important;left:0 !important;right:0 !important;
+  width:100% !important;height:11px !important;
+  border-radius:10px 10px 4px 4px !important;
+  background:linear-gradient(to bottom,#fff 0%,#f9fcff 45%,#e5f3ff 88%,#d3e9ff 100%) !important;
+  box-shadow:0 2px 4px rgba(200,229,255,.55),0 0 9px rgba(255,255,255,.27) !important;
+  opacity:1 !important;filter:none !important;
+  pointer-events:none !important;z-index:13 !important;
+}
+@media(max-width:650px){.xmas-trimmed > .xmas-snowcap{height:9px !important}}
+
+/* Nieve realista con relieve suave. Se ubica POR FUERA del marco,
+   detrás de los gorros, regalos, ramas, esferas y luces. */
+.xmas-trimmed > .xmas-snowcap{
+ top:-19px!important;
+ left:8px!important;
+ right:8px!important;
+ width:auto!important;
+ height:25px!important;
+ border-radius:0!important;
+ background:url("imagenes/nieve-borde-realista.svg") repeat-x left bottom / 600px 30px!important;
+ box-shadow:none!important;
+ filter:drop-shadow(0 2px 2px rgba(180,218,242,.30))!important;
+ z-index:2!important;
+ opacity:.96!important;
+}
+.xmas-trimmed > .xmas-pine-corner,
+.xmas-trimmed > .xmas-hat,
+.xmas-trimmed > .xmas-gifts,
+.xmas-trimmed > .xmas-baubles,
+.xmas-trimmed > .xmas-frame-ornament,
+.xmas-trimmed > .xmas-drop-lights{z-index:20!important}
+.xmas-trimmed > .xmas-gifts{bottom:-18px!important}
+@media(max-width:650px){
+ .xmas-trimmed > .xmas-snowcap{top:-17px!important;height:23px!important;left:5px!important;right:5px!important}
+}
