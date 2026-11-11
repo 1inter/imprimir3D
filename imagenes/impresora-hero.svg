@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560">
+<defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#506075"/><stop offset=".45" stop-color="#222b3b"/><stop offset="1" stop-color="#101824"/></linearGradient><linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a58eff"/><stop offset="1" stop-color="#4364b8"/></linearGradient><linearGradient id="object" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2c6ff"/><stop offset=".45" stop-color="#9369e9"/><stop offset="1" stop-color="#5339b0"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<ellipse cx="395" cy="494" rx="270" ry="33" fill="#6956f9" opacity=".24" filter="url(#shadow)"/>
+<g transform="translate(78 35)">
+<!-- rear frame --> <path d="M105 76 L525 76 L572 112 L572 429 L150 429 L105 393 Z" fill="#0a111f" stroke="#6b6e96" stroke-width="9"/>
+<path d="M105 76 L525 76 L572 112 L150 112 Z" fill="url(#metal)" stroke="#8e85c7" stroke-width="5"/>
+<path d="M150 112 L572 112 L572 429 L150 429 Z" fill="#101827" stroke="#536081" stroke-width="7"/>
+<!-- inner workspace --> <path d="M190 147 L533 147 L533 391 L190 391 Z" fill="#111629" stroke="#273e65" stroke-width="4"/>
+<path d="M190 147 L533 147 L533 391 L190 391 Z" fill="#7053de" opacity=".06"/>
+<!-- illuminated rails --> <path d="M184 165 H535" stroke="#b69aff" stroke-width="10"/><path d="M192 174 H533" stroke="#4b2ba7" stroke-width="4"/>
+<path d="M213 175 V360 M505 175 V360" stroke="#7682ad" stroke-width="5"/>
+<!-- print head --> <path d="M305 174 H425 L412 241 H320 Z" fill="url(#metal)" stroke="#a9a6d8" stroke-width="5"/><path d="M350 241 H382 L376 260 H357 Z" fill="#8c9db5"/><path d="M364 260 L368 280" stroke="#e2a2ff" stroke-width="4"/>
+<!-- bed --> <path d="M180 397 L527 397 L559 426 L209 426 Z" fill="#38465b" stroke="#b4a3eb" stroke-width="5"/><path d="M204 390 L501 390 L520 403 L225 403 Z" fill="#1d2737"/>
+<!-- printed object, abstract spiral vase --> <path d="M326 385 Q337 352 322 323 Q307 292 333 270 L394 270 Q420 292 405 323 Q390 352 402 385 Z" fill="url(#object)" stroke="#e1c8ff" stroke-width="4"/><path d="M333 279 Q360 290 397 279 M326 309 Q362 324 409 309 M328 337 Q364 349 403 337 M331 361 Q363 374 398 361" fill="none" stroke="#efd9ff" stroke-width="3" opacity=".55"/><ellipse cx="364" cy="269" rx="31" ry="7" fill="#523c9e" stroke="#d5b9ff" stroke-width="3"/>
+<!-- front uprights --> <path d="M105 76 L150 112 L150 445 L105 407 Z" fill="url(#metal)" stroke="#78809f" stroke-width="6"/><path d="M525 76 L572 112 L572 445 L525 409 Z" fill="url(#metal)" stroke="#7981a0" stroke-width="6"/>
+<!-- front base --> <path d="M150 429 H572 L542 483 H183 Z" fill="url(#metal)" stroke="#8286b1" stroke-width="6"/><path d="M197 448 H355" stroke="#b59bff" stroke-width="5"/><rect x="438" y="440" width="88" height="28" rx="5" fill="#171f35" stroke="#8c73dc" stroke-width="3"/><path d="M452 454 H505" stroke="#af94ff" stroke-width="4"/>
+</g><g fill="#b99cff"><circle cx="110" cy="200" r="4"/><circle cx="680" cy="170" r="5"/><circle cx="620" cy="440" r="3"/></g>
+</svg>
