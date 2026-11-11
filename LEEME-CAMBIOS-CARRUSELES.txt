@@ -1,0 +1,3 @@
+Se quitaron las imágenes visualmente repetidas dentro de cada carrusel.
+Se agregó la imagen del vaso del mono de Boca en el carrusel de Vasos de galeria.html.
+El resto de los archivos y funciones se conservan.

@@ -1,0 +1,9 @@
+/* Adornos colgantes con espacio reservado: no se superponen a fotos, títulos o botones. */
+.cubo-bauble-host{position:relative!important;padding-top:72px!important}
+.cubo-baubles{position:absolute;top:8px;right:clamp(18px,5vw,65px);height:48px;z-index:2;display:flex;gap:16px;pointer-events:none}
+.cubo-bauble{position:relative;display:block;margin-top:var(--cord);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#ffffff99,var(--ornament) 45%,#1b1425 130%);border:1px solid #e5ca7e;box-shadow:0 2px 8px #0007;animation:cubo-swing 4s ease-in-out infinite alternate;transform-origin:50% calc(-1 * var(--cord))}
+.cubo-bauble::before{content:"";position:absolute;left:7px;bottom:100%;height:var(--cord);width:1px;background:#cbb788}
+.cubo-bauble::after{content:"";position:absolute;top:-4px;left:5px;width:5px;height:4px;background:#d5bb79;border-radius:1px}
+@keyframes cubo-swing{to{transform:rotate(7deg)}}
+@media(max-width:650px){.cubo-bauble-host{padding-top:64px!important}.cubo-baubles{right:18px;gap:10px}.cubo-bauble{width:12px;height:12px}.cubo-bauble::before{left:5px}}
+@media(prefers-reduced-motion:reduce){.cubo-bauble{animation:none}}

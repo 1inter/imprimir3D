@@ -1,0 +1,7 @@
+/* Copos visibles en escritorio y móvil, sin interceptar clics. */
+#cubo-snow-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1200;contain:layout style}
+.cubo-snowflake{position:absolute;top:-30px;left:var(--snow-left);color:#fff;opacity:.86;font-size:var(--snow-size);line-height:1;text-shadow:0 0 5px rgba(255,255,255,.65),0 0 11px rgba(170,210,255,.35);animation:cubo-snow-fall var(--snow-duration) linear var(--snow-delay) infinite;user-select:none;will-change:transform}
+@keyframes cubo-snow-fall{0%{transform:translate3d(0,-35px,0) rotate(0deg);opacity:0}8%{opacity:.86}90%{opacity:.86}100%{transform:translate3d(var(--snow-drift),calc(100vh + 65px),0) rotate(180deg);opacity:0}}
+/* Con movimiento reducido, mostrar copos quietos en lugar de ocultarlos. */
+/* Mantener la nieve animada también en escritorio. */
+@media(max-width:600px){.cubo-snowflake{font-size:calc(var(--snow-size) * .8)}}

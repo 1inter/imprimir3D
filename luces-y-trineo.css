@@ -1,0 +1,13 @@
+/* Luces navideñas animadas. */
+.xmas-lights-host{position:relative}
+.xmas-drop-lights{position:absolute;top:0;left:2%;right:2%;height:45px;display:flex;align-items:flex-start;justify-content:space-around;pointer-events:none;z-index:15;border-top:0;border-radius:0}
+.xmas-drop-bulb{position:relative;display:block;margin-top:var(--drop);height:14px;width:10px;flex-shrink:0;background:var(--bulb);border-radius:45% 45% 55% 55%;box-shadow:0 0 11px 3px var(--bulb);animation:xmas-pulse 2.2s steps(1,end) infinite;animation-delay:var(--delay)}
+.xmas-drop-bulb:before{content:'';position:absolute;width:2px;height:var(--drop);bottom:100%;left:4px;background:#51745a}
+.xmas-drop-bulb:after{content:'';position:absolute;top:-4px;left:-1px;width:12px;height:5px;background:#36523e;border-radius:2px}
+@keyframes xmas-pulse{0%,45%{opacity:1;filter:brightness(1.25);box-shadow:0 0 11px 3px var(--bulb)}46%,80%{opacity:.12;filter:brightness(.2);box-shadow:none}81%,100%{opacity:1;filter:brightness(1.25);box-shadow:0 0 11px 3px var(--bulb)}}
+.xmas-top-garland{position:absolute;top:0;left:0;right:0;height:55px;pointer-events:none;z-index:80}
+.gallery-page>.xmas-top-garland{display:none!important}
+
+/* Luces alineadas con el borde superior: sin cable horizontal ni arco. */
+.xmas-drop-lights{top:0!important;border:0!important;border-radius:0!important;overflow:visible}
+.xmas-drop-bulb:before{top:auto;bottom:100%;height:var(--drop);background:#51745a}

@@ -1,0 +1,6 @@
+/* Gorro navideño discreto sobre el título de la galería, sin cubrir texto. */
+.gallery-page .gallery-xmas-hat-title {position:relative;display:inline-block;margin-top:28px;}
+.gallery-page .gallery-xmas-hat-title::before {content:"🎅";position:absolute;left:-8px;top:-31px;font-size:28px;line-height:1;transform:rotate(-18deg);pointer-events:none;}
+/* Solo se conserva la tira de luces de Productos destacados; ninguna en el encabezado de galería. */
+.gallery-page .gallery-hero .xmas-drop-lights,.gallery-page .xmas-top-garland{display:none!important;}
+@media(max-width:600px){.gallery-page .gallery-xmas-hat-title::before{font-size:23px;top:-27px;left:0}}

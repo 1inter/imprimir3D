@@ -20,16 +20,4 @@ filtros.forEach((boton) => {
   });
 });
 
-function pedirProducto(producto) {
-  // CAMBIÁ ESTE NÚMERO POR TU WHATSAPP.
-  // Ejemplo Argentina: 54 + 9 + código de área + número.
-  const numero = "5491100000000";
-
-  const mensaje =
-    `Hola! Quería consultar por ${producto}. ¿Me podés pasar precio, tamaño y colores disponibles?`;
-
-  const url =
-    `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-
-  window.open(url, "_blank");
-}
+function pedirProducto(producto) { window.open('https://www.instagram.com/cubo_3d.ar/', '_blank', 'noopener'); }

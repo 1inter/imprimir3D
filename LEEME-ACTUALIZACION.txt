@@ -1,0 +1,5 @@
+Cubo3D.ar — Actualización
+Se eliminaron nieve, Santa animado, guirnaldas, adornos, bola de nieve y cuenta regresiva.
+Las fotos de Navidad se integraron al carrusel de Juguetes, y se añadieron las fotos del ZIP en sus categorías.
+Se mantienen los carruseles, etiquetas, vistos recientemente y el resto del sitio.
+Abrir index.html para comenzar.
