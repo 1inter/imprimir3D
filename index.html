@@ -39,6 +39,77 @@
 <div class="hero-image-wrap">
 <div class="hero-glow"></div>
 <img alt="Dragón impreso en 3D" class="hero-image" src="imagenes/dragon-principal.png"/>
+<div class="whatsapp-container">
+  <a href="https://wa.me/5491151370182" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     title="Chatea con nosotros por WhatsApp">
+    <svg xmlns="http://w3.org" viewBox="0 0 32 32" fill="#25D366">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.85.743 5.518 2.043 7.846L0 32l8.347-2.007A15.86 15.86 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.288 22.564c-.354.994-1.742 1.819-2.857 2.058-.788.167-1.808.3-5.253-1.077-4.409-1.758-7.274-6.223-7.494-6.516-.22-.293-1.79-2.384-1.79-4.548 0-2.164 1.131-3.226 1.531-3.664.4-.438.871-.548 1.161-.548.29 0 .58.005.832.017.271.013.635-.103.992.748.374.898 1.272 3.109 1.383 3.336.11.227.185.492.037.785-.148.293-.222.476-.442.733-.22.257-.463.574-.662.771-.223.221-.456.462-.196.907.26.445 1.154 1.906 2.478 3.085 1.706 1.516 3.143 1.983 3.587 2.203.444.22.704.183.965-.11.26-.293 1.121-1.306 1.421-1.754.3-.448.599-.374 1.009-.224.41.15 2.602 1.227 3.046 1.45.443.223.738.334.847.519.109.185.109 1.076-.245 2.07z"/>
+    </svg>
+    <span class="whatsapp-tooltip">¡Escríbenos por WhatsApp!</span>
+  </a>
+  <style>
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.whatsapp-float svg {
+  width: 35px;
+  height: 35px;
+  fill: #ffffff;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20ba5a;
+}
+
+/* Globo de texto (Tooltip) */
+.whatsapp-tooltip {
+  position: absolute;
+  right: 75px;
+  background-color: #ffffff;
+  color: #333366;
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-container:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-5px);
+}
+</style>
+</div>
 </div>
 </section>
 <section class="christmas-home-feature"><img alt="Bandeja navideña con Papá Noel, reno y árbol de Navidad" src="imagenes/catalogo/bandeja-papa-noel-reno-arbol.jfif"/><div><span>🎄 COLECCIÓN NAVIDEÑA</span><h2>Decorá tu Navidad con impresiones 3D</h2><p>Descubrí esferas, adornos, pesebres y mucho más.</p><a href="galeria.html#cat-juguetes">Ver decoraciones navideñas →</a></div></section><section class="benefits">
